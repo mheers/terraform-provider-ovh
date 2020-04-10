@@ -45,7 +45,7 @@ func clientDefault(c *Config) (*ovh.Client, error) {
 func (c *Config) loadAndValidate() error {
 	validEndpoint := false
 
-	ovhEndpoints := [3]string{ovh.OvhEU, ovh.OvhCA, ovh.OvhUS}
+	ovhEndpoints := [8]string{ovh.OvhEU, ovh.OvhCA, ovh.OvhUS, ovh.KimsufiEU, ovh.KimsufiCA, ovh.RunaboveCA, ovh.SoyoustartCA, ovh.SoyoustartEU}
 
 	for _, e := range ovhEndpoints {
 		if ovh.Endpoints[c.Endpoint] == e {
